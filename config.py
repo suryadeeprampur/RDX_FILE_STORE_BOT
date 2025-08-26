@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "20a1b32381ed174799e8af8def3e176b")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/06e309569381293348c9b-ec15536806a91e4190.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7404203924 5739264636').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "RDX_STORE_BOT") # without @
 PORT = environ.get("PORT", "8080")
 
