@@ -159,7 +159,7 @@ async def start(client, message):
                 size=get_size(int(file.file_size))
                 if BATCH_FILE_CAPTION:
                     try:
-                        f_caption=BATCH_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+                        f_caption=BATCH_FILE_CAPTION.format(file_name= '' if title is None else title)
                     except:
                         f_caption=f_caption
                 if f_caption is None:
@@ -234,7 +234,7 @@ async def start(client, message):
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
                 try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='')
+                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title)
                 except:
                     return
             if STREAM_MODE == True:
